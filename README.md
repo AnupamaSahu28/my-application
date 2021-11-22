@@ -1,1 +1,1 @@
-# my-application
+# promotion engine
