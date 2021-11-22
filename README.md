@@ -1,1 +1,5 @@
-# promotion engine
+# Promotion Engine
+
+## Prerequisite
+ JAVA8
+ JUNIT
