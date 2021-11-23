@@ -2,6 +2,7 @@ package com.promotion.pojo;
 
 public class Product {
     private String productName;
+    private Integer price;
 
     public Product(String productName, Integer price) {
         this.productName = productName;
@@ -23,7 +24,5 @@ public class Product {
     public void setPrice(Integer price) {
         this.price = price;
     }
-
-    private Integer price;
 
 }

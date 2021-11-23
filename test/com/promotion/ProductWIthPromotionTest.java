@@ -41,7 +41,6 @@ public class ProductWIthPromotionTest {
 
         PromotionCalculation promotionCalculation = new ProductWithPromotion();
         Integer totalPrice = promotionCalculation.calculate(promotions, cartList);
-        System.out.println("TotalPrice  :::  " + totalPrice);
         assertTrue(totalPrice == 370);
     }
     @Test

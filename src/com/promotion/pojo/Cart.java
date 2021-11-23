@@ -1,6 +1,8 @@
 package com.promotion.pojo;
 
 public class Cart {
+    private Product product;
+    private Integer numberProduct;
 
     public Cart(Product product, Integer numberProduct) {
         this.product = product;
@@ -22,7 +24,4 @@ public class Cart {
     public void setNumberProduct(Integer numberProduct) {
         this.numberProduct = numberProduct;
     }
-
-    private Product product;
-    private Integer numberProduct;
 }

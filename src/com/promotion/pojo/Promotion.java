@@ -3,6 +3,7 @@ package com.promotion.pojo;
 public class Promotion {
     private String productName;
     private Integer item;
+    private Integer promotionPrice;
 
     public Promotion(String productName, Integer item, Integer promotionPrice) {
         this.productName = productName;
@@ -33,6 +34,4 @@ public class Promotion {
     public void setPromotionPrice(Integer promotionPrice) {
         this.promotionPrice = promotionPrice;
     }
-
-    private Integer promotionPrice;
 }

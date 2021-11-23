@@ -15,7 +15,7 @@ public class ProductWithPromotion implements PromotionCalculation{
             for(Cart cart : cartList) {
                 totalPrice += cart.getNumberProduct()* cart.getProduct().getPrice();
             }
-        } else if (promotions.size() > 0) {
+        } else {
             for(Promotion promotion : promotions) {
                 String promotionName = promotion.getProductName();
                 if (!promotionName.contains("&")) {
@@ -25,9 +25,7 @@ public class ProductWithPromotion implements PromotionCalculation{
                             + optionCart.get().getNumberProduct()%promotion.getItem()*optionCart.get().getProduct().getPrice();
                     cartList.remove(optionCart.get());
                 } else {
-
                     String [] combineProductArr =  promotion.getProductName().split("&");
-
                     totalPrice += promotion.getPromotionPrice();
                     for(String name : combineProductArr) {
                         Optional<Cart> optionCart = cartList.stream().filter(cart -> cart.getProduct().getProductName().equals(name)).findFirst();
